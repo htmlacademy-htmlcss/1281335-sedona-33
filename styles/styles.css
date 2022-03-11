@@ -21,3 +21,18 @@ body {
   color: #333333;
   background-color: #FFFFFF;
 }
+
+.page-header {
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+.navigation__link {
+  color: inherit;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+
+}
