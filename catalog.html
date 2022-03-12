@@ -3,12 +3,13 @@
   <head>
     <meta charset="UTF-8">
     <title>Каталог</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
-    <header>
+    <header class="page-header">
       <nav>
         <a class="navigation__logo" href="index.html">
-          <img class="page-header__logo" src="" alt="Логотип Sity of Sedona.">
+          <img class="page-header__logo" src="images/logo.svg" width="139" height="70" alt="Логотип Sity of Sedona.">
         </a>
         <ul class="navigation__list">
           <li class="navigation__item">
@@ -110,116 +111,113 @@
             <legend class="catalog-filter__title">Стоимость, ₽:</legend>
           </fieldset>
           <!-- ********************************************** -->
-          <button class="button" type="submit">ПРИМЕНИТЬ</button>
+          <button class="button button--primary" type="submit">Применить</button>
           <button class="button" type="submit">Сбросить</button>
         </form>
       </header>
       <section class="catalog-hotels">
-        <h2>Найдено гостиниц: </h2>
-        <select class="select-control" aria-label="Сортировка">
-          <option value="popular">Сначала популярные</option>
-          <option value="cheap">Сначала дешёвые</option>
-          <option value="expensive">Сначала дорогие</option>
-        </select>
-        <a href="#" class="button button--current">
-          <span class="visually-hidden">Показать карточки</span>
-        </a>
-        <a class="button" href="#">
-          <span class="visually-hidden">Показать слайд-шоу</span>
-        </a>
-        <a class="button" href="#">
-          <span class="visually-hidden">Показать список</span>
-        </a>
+        <div class="sorting-container">
+          <h2>Найдено гостиниц: </h2>
+          <select class="select-control" aria-label="Сортировка">
+            <option value="popular">Сначала популярные</option>
+            <option value="cheap">Сначала дешёвые</option>
+            <option value="expensive">Сначала дорогие</option>
+          </select>
+          <a href="#" class="button button--current">
+            <span class="visually-hidden">Показать карточки</span>
+          </a>
+          <a class="button" href="#">
+            <span class="visually-hidden">Показать слайд-шоу</span>
+          </a>
+          <a class="button" href="#">
+            <span class="visually-hidden">Показать список</span>
+          </a>
+        </div>
         <!-- **************КАРТОЧКИ*ГОСТИНИЦ******************************* -->
         <ul class="hotel-list">
           <!-- ***************1вая*карточка***************************** -->
           <li class="hotel-card">
             <a class="hotel-card__link" href="#">
-              <img class="hotel-card__image" src="" alt="Amara Resort & Spa">
+              <img class="hotel-card__image" src="images/hotels/hotel-1.jpg" alt="Amara Resort & Spa" width="300" height="206">
               <h3 class="hotel-card__title">Amara Resort & Spa</h3>
             </a>
             <div class="hotel-card__row">
               <span class="housing_type">Гостиница</span>
-              <b class="hotel-card__price">От 4000 ₽</b>
+              <span class="hotel-card__price">От 4000 ₽</span>
             </div>
             <div class="hotel-card__row">
-              <a class="hotel-card__button button button--warm" href="#">ПОДРОБНЕЕ</a>
-              <a class="hotel-card__button button button--primary" href="#">В ИЗБРАННОЕ</a>
+              <a class="hotel-card__button button button--warm" href="#">Подробнее</a>
+              <a class="hotel-card__button button button--primary" href="#">В избранное</a>
             </div>
             <div class="hotel-card__row">
               <span class="hotel-card__stars">4 звезды</span>
-              <span class="hotel-card__rating button">РЕЙТИНГ: 8,5</span>
+              <span class="hotel-card__rating button">Рейтинг: 8,5</span>
             </div>
           </li>
           <!-- ***************2ая*карточка***************************** -->
           <li class="hotel-card">
             <a class="hotel-card__link" href="#">
-              <img class="hotel-card__image" src="" alt="Desert Quail Inn">
+              <img class="hotel-card__image" src="images/hotels/hotel-2.jpg" alt="Desert Quail Inn" width="300" height="206">
               <h3 class="hotel-card__title">Desert Quail Inn</h3>
             </a>
             <div class="hotel-card__row">
               <span class="housing_type">Гостиница</span>
-              <b class="hotel-card__price">От 3000 ₽</b>
+              <span class="hotel-card__price">От 3000 ₽</span>
             </div>
             <div class="hotel-card__row">
-              <a class="hotel-card__button button button--warm" href="#">ПОДРОБНЕЕ</a>
-              <a class="hotel-card__button button button--primary" href="#">В ИЗБРАННОЕ</a>
+              <a class="hotel-card__button button button--warm" href="#">Подробнее</a>
+              <a class="hotel-card__button button button--primary" href="#">В избранное</a>
             </div>
             <div class="hotel-card__row">
               <span class="hotel-card__stars">3 звезды</span>
-              <span class="hotel-card__rating button">РЕЙТИНГ: 8,9</span>
+              <span class="hotel-card__rating button">Рейтинг: 8,9</span>
             </div>
           </li>
           <!-- ***************3тья*карточка***************************** -->
           <li class="hotel-card">
             <a class="hotel-card__link" href="#">
-              <img class="hotel-card__image" src="" alt="Villas at Poco Diablo">
+              <img class="hotel-card__image" src="images/hotels/hotel-3.jpg" alt="Villas at Poco Diablo" width="300" height="206">
               <h3 class="hotel-card__title">Villas at Poco Diablo</h3>
             </a>
             <div class="hotel-card__row">
               <span class="housing_type">Гостиница</span>
-              <b class="hotel-card__price">От 2000 ₽</b>
+              <span class="hotel-card__price">От 2000 ₽</span>
             </div>
             <div class="hotel-card__row">
-              <a class="hotel-card__button button button--warm" href="#">ПОДРОБНЕЕ</a>
-              <a class="hotel-card__button button button--primary" href="#">В ИЗБРАННОЕ</a>
+              <a class="hotel-card__button button button--warm" href="#">Подробнее</a>
+              <a class="hotel-card__button button button--primary" href="#">В избранное</a>
             </div>
             <div class="hotel-card__row">
               <span class="hotel-card__stars">2 звезды</span>
-              <span class="hotel-card__rating button">РЕЙТИНГ: 9,2</span>
+              <span class="hotel-card__rating button">Рейтинг: 9,2</span>
             </div>
           </li>
           <!-- ***************4тая*карточка***************************** -->
           <li class="hotel-card">
             <a class="hotel-card__link" href="#">
-              <img class="hotel-card__image" src="" alt="GreenTree Inn">
+              <img class="hotel-card__image" src="images/hotels/hotel-4.jpg" alt="GreenTree Inn" width="300" height="206">
               <h3 class="hotel-card__title">GreenTree Inn</h3>
             </a>
             <div class="hotel-card__row">
               <span class="housing_type">Гостиница</span>
-              <b class="hotel-card__price">От 3000 ₽</b>
+              <span class="hotel-card__price">От 3000 ₽</span>
             </div>
             <div class="hotel-card__row">
-              <a class="hotel-card__button button button--warm" href="#">ПОДРОБНЕЕ</a>
-              <a class="hotel-card__button button button--primary" href="#">В ИЗБРАННОЕ</a>
+              <a class="hotel-card__button button button--warm" href="#">Подробнее</a>
+              <a class="hotel-card__button button button--primary" href="#">В избранное</a>
             </div>
             <div class="hotel-card__row">
               <span class="hotel-card__stars">2 звезды</span>
-              <span class="hotel-card__rating button">РЕЙТИНГ: 9,2</span>
+              <span class="hotel-card__rating button">Рейтинг: 9,2</span>
             </div>
           </li>
         </ul>
         <!-- ***************КОНЕЦ*СПИСКА*КАРТОЧЕК***************************** -->
-        <div class="load">
-          <button class="button load__show-more" type="button">ЗАГРУЗИТЬ ЕЩЁ</button>
-        </div>
+        <hr>
+        <button class="button button--primary load__show-more" type="button">Загрузить ещё</button>
+        <hr>
         <div class="load">
           <ul class="pagination">
-            <li class="pagination__item">
-              <a class="pagination__link pagination--prev pagination--disabled">
-                <span class="visually-hidden">Предыдущая страница</span>
-              </a>
-            </li>
             <li class="pagination__item">
               <a class="pagination__link pagination--current">1</a>
             </li>
@@ -233,20 +231,20 @@
               <a class="pagination__link" href="#">4</a>
             </li>
             <li class="pagination__item">
-              <a class="pagination__link" href="#">5</a>
+              <a class="pagination__link" href="#">...</a>
             </li>
             <li class="pagination__item">
-              <a class="pagination__link pagination--next" href="#">
-                <span class="visually-hidden">Следующая страница</span>
-              </a>
+              <a class="pagination__link" href="#">10</a>
             </li>
           </ul>
-          <span>Гостиниц на странице:</span>
-          <select class="select-control" aria-label="Кол-во карточек на сранице">
-            <option value="four">4</option>
-            <option value="five">5</option>
-            <option value="six">6</option>
-          </select>
+          <div class="card-count">
+            <span>Гостиниц на странице:</span>
+            <select class="select-control" aria-label="Кол-во карточек на сранице">
+              <option value="four">4</option>
+              <option value="five">5</option>
+              <option value="six">6</option>
+            </select>
+          </div>
         </div>
       </section>
       <!-- ***************БЛОК*ПОДПИСКИ****************************** -->
@@ -257,7 +255,7 @@
           <label for="newsletter-email">Email</label>
           <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
           <button class="button newsletter-button" type="submit">
-            <span>ПОДПИСАТЬСЯ</span>
+            <span>Подписаться</span>
           </button>
         </form>
       </section>
@@ -266,17 +264,17 @@
       <section class="footer-social">
         <ul class="footer-social__list">
           <li class="footer-social__item">
-            <a class="button" href="#">
+            <a class="button button--primary" href="#">
               <span class="visually-hidden">Твиттер</span>
             </a>
           </li>
           <li class="footer-social__item">
-            <a class="button" href="#">
+            <a class="button button--primary" href="#">
               <span class="visually-hidden">Facebook</span>
             </a>
           </li>
           <li class="footer-social__item">
-            <a class="button" href="#">
+            <a class="button button--primary" href="#">
               <span class="visually-hidden">YouTube</span>
             </a>
           </li>
@@ -286,7 +284,7 @@
         <a class="footer-address-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
       </div>
       <div>
-        <img class="footer-logo" src="" alt="Логотип htmlacademy">
+        <img class="footer-logo" src="images/logo-htmlacademy.svg" alt="Логотип htmlacademy" width="115" height="34">
       </div>
     </footer>
   </body>
