@@ -96,6 +96,8 @@ body h2 {
 }
 
 .navigation__list {
+  display: flex;
+  flex-wrap: wrap;
   width: 460px;
   margin: 0;
   padding: 0;
@@ -103,12 +105,18 @@ body h2 {
 }
 
 .navigation__link {
+  display: block;
+  padding: 20px 34px;
   color: inherit;
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
   text-align: center;
   text-decoration: none;
+}
+.navigation__user .navigation__link {
+  min-width: 18px;
+  min-height: 18px;
 }
 
 .navigation__item .button {
@@ -124,13 +132,16 @@ body h2 {
 }
 
 .page-container {
+  padding-top: 51px;
+  background-image: url("../images/background-index.jpg");
+  background-repeat: no-repeat;
   width: 1200px;
   margin: 0 auto;
 }
 
 .background-index {
-  background-image: url("../images/background-index.jpg");
-  /*background-repeat: no-repeat;*/
+  /*padding-top: 51px;*/
+  /*background-image: url("../images/background-index.jpg");*/
   width: 1200px;
   height: 485px; /*так высоту ограничивать можно? */
   /*text-align: center;*/
