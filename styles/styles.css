@@ -215,7 +215,16 @@ body h2 {
 }
 
 .entry {
-  height: 417px;
+  /*height: 417px;*/
+  margin: 0 auto;
+  /*padding: 0;*/
+  padding-top: 91px;
+  padding-bottom: 93px;
+}
+
+.entry h2 {
+  margin-top: 0;
+  margin-bottom: 30px;
 }
 
 .subscription {
@@ -242,28 +251,37 @@ body h2 {
 
 .subscription-inner {
   text-align: center;
-}
-
-.entry {
-  /*text-align: center;*/
-}
-
-.entry h2 {
-  margin-top: 91px;
-  margin-bottom: 30px;
+  margin: 0;
+  padding-top: 48px;
+  padding-bottom: 141px;
 }
 
 .header-inner {
+  height: 373px;
+  padding-top: 35px;
+  padding-left: 71px;
   color: #FFFFFF;
   background-color: #756257;
   background-image: url("../images/background-catalog.jpg");
 }
 
 .header-inner-title {
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 5px;
   font-size: 60px;
   line-height: 78px; /*  77.64  */
 
+}
+
+.breadcrumbs {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style-type: none;
+}
+
+.breadcrumbs-link {
+  margin-right: 26px;
 }
 
 .catalog-filter__group {
@@ -282,22 +300,37 @@ body h2 {
   /*margin-right: 192px;*/
 }
 
+.sorting--types {
+  display: flex;
+}
+
 .sorting--types .button {
   color: #333333;
   background-color: #FFFFFF;
+  width: 48px;
+  height: 48px;
+  border: 2px solid #E6E6E6;
 }
 
 .sorting-container {
   display: flex;
   width: 1057px;
-}
-
-.sorting-container .button {
-  border: 2px solid #E6E6E6;
+  margin-left: 71px;
+  margin-right: 71px;
+  margin-bottom: 53px;
 }
 
 .sorting-container .button--current {
   border: 2px solid #000000;
+}
+
+.sorting--title {
+  margin-right: 192px;
+}
+
+.sorting--select {
+  margin-right: 81px;
+  color: #333333;
 }
 
 .hotels {
@@ -355,23 +388,34 @@ body h2 {
   text-align: center;
 }
 
-.load {
+.pagination-container {
   display: flex;
-  justify-content: space-between;
+  /*justify-content: space-between;*/
 }
 
 .pagination {
   display: flex;
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .pagination__link {
+  display: block;
+  box-sizing: border-box;
   color: #FFFFFF;
   background-color: #83B3D3;
   text-decoration: none;
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
+  width: 55px;
+  height: 55px;
+  padding: 14px 21px;
+}
+
+.pagination__item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .pagination--current {
@@ -383,6 +427,7 @@ body h2 {
   font-size: 18px;
   line-height: 23px;
   display: flex;
+  margin-left: auto; /*либо justify-content в pagination-container*/
 }
 
 .page-footer-container {
