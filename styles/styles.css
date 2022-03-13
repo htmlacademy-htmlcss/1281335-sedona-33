@@ -13,7 +13,7 @@
   src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
-.html {
+html {
   height: 100%;
 }
 
@@ -46,10 +46,6 @@ body h2 {
   border-radius: 4px;
 }
 
-.button--warm {
-  background-color: #756257;
-}
-
 .button--primary {
   background-color: #83B3D3;
 }
@@ -61,6 +57,14 @@ body h2 {
 .page-header {
   color: #000000;
   background-color: #FFFFFF;
+}
+
+.catalog-filter {
+  display: flex;
+}
+
+.form-buttons {
+/*  пока не использовала  */
 }
 
 .navigation {
@@ -93,6 +97,10 @@ body h2 {
   font-weight: 700;
   text-align: center;
   text-decoration: none;
+}
+
+.navigation__item .button {
+  color: #FFFFFF;
 }
 
 .main-container {
@@ -161,20 +169,25 @@ body h2 {
 }
 
 .subscription {
-  height: 411px;
+  /*height: 411px;*/
   color: #FFFFFF;
   background-color: #83B3D3;
   background-image: url("../images/background-subscription.jpg");
+  padding: 94px 200px 93px 200px;
   /*text-align: center;*/
 }
-
 .sub {
   width: 800px;
   height: 224px;
 }
 
-.subscription-inner {
+/* из-за заголовков лишние пиксели в отступах везде, пока такой костыль */
+.sub h2 {
+  margin: 0;
+}
 
+.subscription-inner {
+  text-align: center;
 }
 
 .entry {
@@ -204,12 +217,42 @@ body h2 {
   line-height: 26px;
 }
 
+.sorting--title {
+  /*пока не стала прописывать*/
+  /*margin-right: 192px;*/
+}
+
+.sorting--types .button {
+  color: #333333;
+  background-color: #FFFFFF;
+}
+
+.sorting-container {
+  display: flex;
+  width: 1057px;
+}
+
 .sorting-container .button {
   border: 2px solid #E6E6E6;
 }
 
 .sorting-container .button--current {
   border: 2px solid #000000;
+}
+
+.hotels {
+  width: 1057px;
+}
+
+.hotel-list {
+  display: flex;
+  list-style: none;
+}
+
+.hotel-card {
+  width: 340px;
+  margin-right: 18px;
+  padding: 20px;
 }
 
 .hotel-card__link {
@@ -245,6 +288,20 @@ body h2 {
   color: #000000;
 }
 
+.load__show {
+  text-align: center;
+}
+
+.load {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pagination {
+  display: flex;
+  list-style: none;
+}
+
 .pagination__link {
   color: #FFFFFF;
   background-color: #83B3D3;
@@ -262,6 +319,7 @@ body h2 {
 .card-count {
   font-size: 18px;
   line-height: 23px;
+  display: flex;
 }
 
 .page-footer-container {
