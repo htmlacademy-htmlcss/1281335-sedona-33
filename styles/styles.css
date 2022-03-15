@@ -473,8 +473,9 @@ body h2 {
   min-height: 18px;
   margin-right: 30px; /*???*/
 }
-      /*???*/
-.footer-social-item:nth-child(3n) {
+
+/*или nth-child(3n)???*/
+.footer-social-item:last-child {
   margin-right: 0;
 }
 
