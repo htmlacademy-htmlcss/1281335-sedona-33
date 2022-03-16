@@ -526,8 +526,8 @@ body h2 {
   margin-right: 30px; /*???*/
 }
 
-/*или nth-child(3n)???*/
-.footer-social-item:last-child {
+/*или last-child*/
+.footer-social__item:nth-child(3n) {
   margin-right: 0;
 }
 
