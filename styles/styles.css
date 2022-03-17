@@ -332,6 +332,10 @@ body h2 {
   margin-right: 26px;
 }
 
+.catalog-hotels {
+  padding: 0px 72px;
+}
+
 .catalog-filter__group {
   font-size: 18px;
   line-height: 23px;
@@ -343,6 +347,12 @@ body h2 {
   line-height: 26px;
 }
 
+.sorting-container {
+  display: flex;
+  width: 1057px;
+  margin-bottom: 53px;
+}
+
 .sorting--title {
   /*пока не стала прописывать*/
   /*margin-right: 192px;*/
@@ -350,6 +360,8 @@ body h2 {
 
 .sorting--types {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .card-grid-toggle {
@@ -364,14 +376,6 @@ body h2 {
   border-radius: 4px;
 }
 
-.sorting-container {
-  display: flex;
-  width: 1057px;
-  margin-left: 71px;
-  margin-right: 71px;
-  margin-bottom: 53px;
-}
-
 .card-grid-toggle--current {
   border: 2px solid #000000;
 }
@@ -381,6 +385,9 @@ body h2 {
 }
 
 .sorting--select {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-right: 81px;
   color: #333333;
 }
