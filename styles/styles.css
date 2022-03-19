@@ -61,6 +61,21 @@ body h2 {
   cursor: pointer;
 }
 
+.button:hover {
+  color: #FFFFFF;
+  background-color: #615048;
+}
+
+.button:focus {
+  outline: 3px solid #83B3D3;
+}
+
+.button:active {
+  background-color: #615048;
+  outline: none;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 body h2 {
   line-height: 36px;
 }
@@ -69,13 +84,17 @@ body h2 {
   background-color: #83B3D3;
 }
 
+.button--primary:hover {
+  background-color: #68A2CA;
+}
+
+.button--primary:focus{
+  outline: 3px solid #756257;;
+}
+
 .no-indent {
   margin: 0;
   padding: 0;
-}
-
-.newsletter-button {
-  background-color: #83B3D3;
 }
 
 .page-header {
@@ -92,7 +111,7 @@ body h2 {
 }
 
 .navigation {
- display: flex;
+  display: flex;
   width: 1060px;
   margin: 0 auto;
 }
@@ -148,6 +167,36 @@ body h2 {
   bottom: 0;
   left: 0;
   margin: auto;
+}
+
+.navigation__link:hover {
+  color: #756257;
+}
+
+/*Пока не работает, скорее всего некорректно иконки
+в вёрстку вставила - нужно лайк и цифру отдельно вставлять*/
+.navigation__link:hover .navigation__icon {
+  fill: #756257;
+}
+
+/*Возможно стоит для всего button указать эти стили,
+а потом для отличающ-ся кнопоко изменить*/
+.navigation__item:hover .button {
+  color: #FFFFFF;
+}
+
+.navigation__item:active .button {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.navigation__link--current::before {
+  position: absolute;
+  right: 17px;
+  bottom: 0;
+  left: 17px;
+  height: 2px;
+  background-color: #756257;
+  content: "";
 }
 
 .main-container {
@@ -287,6 +336,13 @@ body h2 {
   /*margin: 0;*/
 }
 
+/*.newsletter-button {*/
+/*  background-color: #83B3D3;*/
+/*}*/
+/*.newsletter-button:hover {*/
+/*  background-color: #68A2CA;*/
+/*}*/
+
 .subscription-inner {
   width: 800px;
   text-align: center;
@@ -322,14 +378,37 @@ body h2 {
 }
 
 .breadcrumbs {
-  margin: 0;
+  margin: 0px 0px 45px 0px;
   padding: 0;
   display: flex;
   list-style-type: none;
 }
 
 .breadcrumbs-link {
+  /*margin-right: 26px;*/
+}
+
+.breadcrumbs-item {
   margin-right: 26px;
+  position: relative;
+}
+
+/*.breadcrumbs-item::after {*/
+/*  position: absolute;*/
+/*  background-image: url("../images/nav-link.svg");*/
+/*  background-repeat: no-repeat;*/
+/*  background-position: center;*/
+/*  background-color: #FFFFFF;*/
+/*  top: 8px;*/
+/*  right: -17px;*/
+/*  !*width: 8px;*!*/
+/*  !*height: 8px;*!*/
+/*  !*background-color: #242424;*!*/
+/*  content: "";*/
+}
+
+.breadcrumbs-item:last-child::after {
+  content: none;
 }
 
 .catalog-hotels {
@@ -497,6 +576,16 @@ body h2 {
 
 .load__show {
   text-align: center;
+  border-top: 1px solid #E6E6E6;
+  border-bottom: 1px solid #E6E6E6;
+  padding: 30px 218px 30px 218px;
+  margin-bottom: 30px;
+}
+
+.load__show-more {
+  width: 100%;
+  padding: 17px 0px;
+  line-height: 26px;
 }
 
 .pagination-container {
@@ -594,6 +683,10 @@ body h2 {
 .footer-social .button {
   text-transform: none;
   background-color: #FFFFFF;
+}
+
+.footer-social__item:hover {
+  fill: #68A2CA;
 }
 
 /*.footer-social__link {*/
