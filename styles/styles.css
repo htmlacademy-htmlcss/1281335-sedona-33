@@ -618,7 +618,8 @@ body h2 {
   font-weight: 700;
   width: 55px;
   height: 55px;
-  padding: 14px 21px;
+  padding: 14px 15px;
+  text-align: center;
 }
 
 .pagination__item:not(:last-child) {
