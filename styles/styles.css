@@ -98,6 +98,24 @@ body h2 {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.button--green {
+  background-color: #7DB54F;
+}
+
+.button--green:hover {
+  background-color: #6C9E42;
+}
+
+.button--green:focus {
+  outline: 3px solid #756257;
+}
+
+.button--green:active {
+  background-color: #6C9E42;
+  outline: none;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .no-indent {
   margin: 0;
   padding: 0;
@@ -566,6 +584,14 @@ body h2 {
 
 .favorite {
   width: 140px;
+}
+
+.favorite:hover {
+  outline: 1px solid #756257;
+}
+
+.favorite:active {
+  outline: 1px solid #756257;
 }
 
 .hotel-card__rating {
