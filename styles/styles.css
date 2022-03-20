@@ -117,6 +117,7 @@ body h2 {
 }
 
 .navigation__logo {
+  position: absolute;
   width: 149px;
   margin-right: 30px;
 }
@@ -125,7 +126,7 @@ body h2 {
   display: flex;
   flex-wrap: wrap;
   width: 460px;
-  margin: 0;
+  margin:0 0 0 239px;
   padding: 0;
   list-style-type: none;
 }
