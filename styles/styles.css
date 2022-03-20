@@ -732,7 +732,34 @@ body h2 {
 /*  margin: auto;*/
 /*}*/
 
-/*этот параметр нужен?*/
-.logo-htmlacademy {
-  width: 115px;
+/*.footer-logo:focus {*/
+/*  outline: 3px solid #83B3D3;*/
+/*}*/
+
+.footer-logo {
+  padding: 14px 22px;
 }
+
+.logo-htmlacademy {
+  color: #000000;
+}
+
+.logo-htmlacademy:hover {
+  fill: #756257;
+}
+
+.logo-htmlacademy:focus {
+  fill: #756257;
+}
+
+.footer-logo:focus {
+  outline: 3px solid #83B3D3;
+  border-radius: 10px;
+  fill: #756257;
+}
+
+.footer-logo:active {
+  opacity: 0.3;
+  outline: none;
+}
+
