@@ -174,8 +174,6 @@ body h2 {
   color: #756257;
 }
 
-/*Пока не работает, скорее всего некорректно иконки
-в вёрстку вставила - нужно лайк и цифру отдельно вставлять*/
 .navigation__link:hover .navigation__icon {
   fill: #756257;
 }
@@ -184,10 +182,6 @@ body h2 {
   opacity: 0.3;
 }
 
-
-
-/*Возможно стоит для всего button указать эти стили,
-а потом для отличающ-ся кнопоко изменить*/
 .navigation__item:hover .button {
   color: #FFFFFF;
 }
@@ -407,7 +401,7 @@ body h2 {
   background-position: center;
   top: 8px;
   right: -17px;
-  width: 8px;
+  width: 5px;
   height: 8px;
   content: "";
 }
