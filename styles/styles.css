@@ -180,9 +180,11 @@ body h2 {
   fill: #756257;
 }
 
-.navigation__link:active .navigation__icon {
+.navigation__link:active .navigation__icon path {
   opacity: 0.3;
 }
+
+
 
 /*Возможно стоит для всего button указать эти стили,
 а потом для отличающ-ся кнопоко изменить*/
@@ -398,19 +400,17 @@ body h2 {
   position: relative;
 }
 
-/*.breadcrumbs-item::after {*/
-/*  position: absolute;*/
-/*  background-image: url("../images/nav-link.svg");*/
-/*  background-repeat: no-repeat;*/
-/*  background-position: center;*/
-/*  background-color: #FFFFFF;*/
-/*  top: 8px;*/
-/*  right: -17px;*/
-/*  !*width: 8px;*!*/
-/*  !*height: 8px;*!*/
-/*  !*background-color: #242424;*!*/
-/*  content: "";*/
-/*}*/
+.breadcrumbs-item::after {
+  position: absolute;
+  background-image: url("../images/nav-link.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 8px;
+  right: -17px;
+  width: 8px;
+  height: 8px;
+  content: "";
+}
 
 .breadcrumbs-item:last-child::after {
   content: none;
