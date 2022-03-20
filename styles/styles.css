@@ -179,6 +179,10 @@ body h2 {
   fill: #756257;
 }
 
+.navigation__link:active .navigation__icon {
+  opacity: 0.3;
+}
+
 /*Возможно стоит для всего button указать эти стили,
 а потом для отличающ-ся кнопоко изменить*/
 .navigation__item:hover .button {
@@ -405,7 +409,7 @@ body h2 {
 /*  !*height: 8px;*!*/
 /*  !*background-color: #242424;*!*/
 /*  content: "";*/
-}
+/*}*/
 
 .breadcrumbs-item:last-child::after {
   content: none;
