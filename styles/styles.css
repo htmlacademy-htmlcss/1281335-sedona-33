@@ -71,13 +71,13 @@ body h2 {
 }
 
 .button:active {
-  background-color: #615048;
-  outline: none;
-  color: rgba(255, 255, 255, 0.3);
+
 }
 
 body h2 {
-  line-height: 36px;
+  line-heibackground-color: #615048;
+  outline: none;
+  color: rgba(255, 255, 255, 0.3);ght: 36px;
 }
 
 .button--primary {
@@ -89,7 +89,13 @@ body h2 {
 }
 
 .button--primary:focus{
-  outline: 3px solid #756257;;
+  outline: 3px solid #756257;
+}
+
+.button--primary:active {
+  background-color: #68A2CA;
+  outline: none;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .no-indent {
