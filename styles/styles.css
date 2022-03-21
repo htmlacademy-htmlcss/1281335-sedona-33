@@ -470,6 +470,11 @@ body h2 {
   justify-content: center;
 }
 
+header .button--primary:focus {
+  outline: 3px solid #FFFFFF;
+  background-color: #68A2CA;
+}
+
 .card-grid-toggle {
   display: flex;
   align-items: center;
@@ -596,11 +601,25 @@ body h2 {
   outline: 1px solid #756257;
 }
 
+.hotel-card__stars {
+  display: flex;
+  align-items: center;
+}
+
+.star {
+  margin-right: 7px;
+}
+
+.star:last-child {
+  margin-right: 0;
+}
+
 .hotel-card__rating {
   width: 160px;
   font-size: 16px;
   line-height: 21px;
   font-weight: 400;
+  text-transform: uppercase;
   background-color: #F2F2F2;
   color: #000000;
   text-align: center;
