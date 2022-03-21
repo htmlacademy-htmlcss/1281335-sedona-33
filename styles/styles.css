@@ -76,12 +76,6 @@ body h2 {
   color: rgba(255, 255, 255, 0.3);
 }
 
-body h2 {
-  line-heibackground-color: #615048;
-  outline: none;
-  color: rgba(255, 255, 255, 0.3);ght: 36px;
-}
-
 .button--primary {
   background-color: #83B3D3;
 }
@@ -455,6 +449,7 @@ body h2 {
 
 .sorting-container {
   display: flex;
+  justify-content: space-between;
   width: 1057px;
   margin-bottom: 53px;
 }
@@ -462,6 +457,10 @@ body h2 {
 .sorting--title {
   /*пока не стала прописывать*/
   /*margin-right: 192px;*/
+}
+
+.sorting--elements {
+  display: flex;
 }
 
 .sorting--types {
@@ -485,9 +484,28 @@ header .button--primary:focus {
   height: 44px;
   border: 2px solid #E6E6E6;
   border-radius: 4px;
+  margin-right: 8px;
+}
+
+.card-grid-toggle:last-child {
+  margin-right: 0;
 }
 
 .card-grid-toggle--current {
+  border: 2px solid #000000;
+}
+
+.card-grid-toggle:hover {
+  border: 2px solid #83B3D3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.card-grid-toggle:focus {
+  border: 2px solid #83B3D3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.card-grid-toggle:active {
   border: 2px solid #000000;
 }
 

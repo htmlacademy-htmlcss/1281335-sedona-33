@@ -132,29 +132,31 @@
             <div class="sorting--title">
               <h2>Найдено гостиниц: </h2>
             </div>
-            <div class="sorting--select">
-              <select class="select-control" aria-label="Сортировка">
-                <option value="popular">Сначала популярные</option>
-                <option value="cheap">Сначала дешёвые</option>
-                <option value="expensive">Сначала дорогие</option>
-              </select>
-            </div>
-            <div class="sorting--types">
-              <a href="#" class="card-grid-toggle card-grid-toggle--current">
-                <svg aria-hidden="true" focusable="false" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z" fill="#000"/>
-                </svg>
-                <span class="visually-hidden">Показать карточки</span>
-              </a>
-              <a class="card-grid-toggle" href="#">
-                <svg aria-hidden="true" focusable="false" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z" fill="#000"/>
-                </svg>
-                <span class="visually-hidden">Показать слайд-шоу</span>
-              </a>
-              <a class="card-grid-toggle" href="#">
-                <svg ria-hidden="true" focusable="false" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z" fill="#000"/>
-                </svg>
-                <span class="visually-hidden">Показать список</span>
-              </a>
+            <div class="sorting--elements">
+              <div class="sorting--select">
+                <select class="select-control" aria-label="Сортировка">
+                  <option value="popular">Сначала популярные</option>
+                  <option value="cheap">Сначала дешёвые</option>
+                  <option value="expensive">Сначала дорогие</option>
+                </select>
+              </div>
+              <div class="sorting--types">
+                <a href="#" class="card-grid-toggle card-grid-toggle--current">
+                  <svg aria-hidden="true" focusable="false" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z" fill="#000"/>
+                  </svg>
+                  <span class="visually-hidden">Показать карточки</span>
+                </a>
+                <a class="card-grid-toggle" href="#">
+                  <svg aria-hidden="true" focusable="false" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z" fill="#000"/>
+                  </svg>
+                  <span class="visually-hidden">Показать слайд-шоу</span>
+                </a>
+                <a class="card-grid-toggle" href="#">
+                  <svg ria-hidden="true" focusable="false" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z" fill="#000"/>
+                  </svg>
+                  <span class="visually-hidden">Показать список</span>
+                </a>
+              </div>
             </div>
           </div>
           <!-- **************КАРТОЧКИ*ГОСТИНИЦ******************************* -->
@@ -301,7 +303,7 @@
         <!-- ***************БЛОК*ПОДПИСКИ****************************** -->
         <section class="subscription-inner">
           <h2>Подпишитесь на рассылку</h2>
-          <p class="text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <p class="text">Только полезная информация и никакого спама, <br> честное бойскаутское!</p>
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
             <label for="newsletter-email">Email</label>
             <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
