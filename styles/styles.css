@@ -67,11 +67,13 @@ body h2 {
 }
 
 .button:focus {
+  background-color: #615048;
   outline: 3px solid #83B3D3;
 }
 
 .button:active {
-
+  outline: none;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 body h2 {
