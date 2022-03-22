@@ -104,6 +104,7 @@ body h2 {
 
 .button--green:focus {
   outline: 3px solid #756257;
+  background-color: #6C9E42;
 }
 
 .button--green:active {
@@ -560,6 +561,18 @@ header .button--primary:focus {
   margin-bottom: 16px;
 }
 
+.hotel-card__link:hover .hotel-card__image {
+  opacity: 0.6;
+}
+
+.hotel-card__link:focus .hotel-card__image {
+  outline: 3px solid #83B3D3;
+}
+
+.hotel-card__link:active .hotel-card__image {
+  opacity: 0.3;
+}
+
 .hotel-card__title {
   font-size: 24px;
   line-height: 31px;
@@ -609,10 +622,15 @@ header .button--primary:focus {
 
 .favorite {
   width: 140px;
+  background-color: #83B3D3;
 }
 
 .favorite:hover {
   outline: 1px solid #756257;
+}
+
+.favorite:focus {
+  background-color: #68A2CA;
 }
 
 .favorite:active {
