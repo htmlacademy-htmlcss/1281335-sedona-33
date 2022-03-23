@@ -436,6 +436,7 @@ body h2 {
 .header-inner {
   height: 373px;
   padding: 35px 72px 0px 72px;
+  margin-bottom: 25px;
   color: #FFFFFF;
   background-color: #756257;
   background-image: url("../images/background-catalog.jpg");
@@ -649,18 +650,20 @@ body h2 {
 
 .sorting-container {
   display: flex;
-  justify-content: space-between;
+  /*justify-content: space-between;*/
   width: 1057px;
   margin-bottom: 53px;
 }
 
 .sorting--title {
+  line-height: 39px;
   /*пока не стала прописывать*/
   /*margin-right: 192px;*/
 }
 
 .sorting--elements {
   display: flex;
+  flex-grow: 1;
 }
 
 .sorting--types {
@@ -736,11 +739,40 @@ body h2 {
 }
 
 .sorting--select {
+  position: relative;
   display: flex;
+  width: 287px;
   align-items: center;
-  justify-content: center;
-  margin-right: 81px;
+  /*justify-content: center;*/
+  margin-right: auto;
   color: #333333;
+}
+
+/* Control */
+.select-control {
+  width: 100%;
+  padding: 12px 48px 13px 19px;
+  font: inherit;
+  background-color: #ffffff;
+  border: 2px solid #E6E6E6;
+  border-radius: 4px;
+  background-image: url("../images/dropdown.svg");
+  background-repeat: no-repeat;
+  background-position: right 22px center;
+  appearance: none;
+}
+
+.select-control:hover,
+.select-control:focus {
+  border-color: #83B3D3;
+}
+
+.select-control:focus {
+  outline: none;
+}
+
+.select-control:active {
+  opacity: 0.3;
 }
 
 .hotels {
