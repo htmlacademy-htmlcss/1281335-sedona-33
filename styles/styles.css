@@ -128,7 +128,13 @@ body h2 {
 }
 
 .form-buttons {
-/*  пока не использовала  */
+  list-style-type: none;
+  margin: 60px 0 0 14px;
+  padding: 0;
+}
+
+.form-buttons__item:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 .navigation {
@@ -429,8 +435,7 @@ body h2 {
 
 .header-inner {
   height: 373px;
-  padding-top: 35px;
-  padding-left: 71px;
+  padding: 35px 72px 0px 72px;
   color: #FFFFFF;
   background-color: #756257;
   background-image: url("../images/background-catalog.jpg");
@@ -476,19 +481,170 @@ body h2 {
   content: none;
 }
 
-.catalog-hotels {
-  padding: 0px 72px;
-}
-
 .catalog-filter__group {
   font-size: 18px;
   line-height: 23px;
+  /*Нужно поправить правый отступ для каждого филдсета!*/
+  margin: 0 67px 0 0;
+  padding: 0;
+  border: none;
 }
 
 .catalog-filter__title {
   font-size: 20px;
   font-weight: 700;
   line-height: 26px;
+  margin-bottom: 30px;
+}
+
+/* Control */
+.control {
+  position: relative;
+  display: block;
+  padding-left: 39px;
+}
+
+/* Mark */
+.control-mark {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #FFFFFF;
+}
+
+.control:hover .control-mark {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+/*.control-input:disabled + .control-mark {*/
+/*  border-color: #242424;*/
+/*}*/
+
+/* Отрисованные чек-боксы */
+.control__input[type="checkbox"]:checked + .control-mark::before,
+.control__input[type="checkbox"]:checked + .control-mark::after {
+  position: absolute;
+  width: 13px;
+  height: 10px;
+  background-image: url("../images/tick.svg");
+  top: 5px;
+  left: 4px;
+  content: "";
+}
+
+/* Radio */
+.control__input[type="radio"] + .control-mark {
+  border-radius: 50%;
+}
+
+.control__input[type="radio"]:checked + .control-mark::before {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+  background-color: #3F5E72;
+  border-radius: 50%;
+  content: "";
+}
+
+.catalog-filter__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.catalog-filter__item:not(:last-child) {
+  margin-bottom: 13px;
+}
+
+.fieldset-input {
+  margin-left: 100px;
+}
+
+.range-scale {
+  position: relative;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.range-toggle:focus {
+  outline: 3px solid #83B3D3;
+}
+
+.range-toggle:active {
+  outline: 3px solid #83B3D3;
+  box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.4);
+}
+
+.toggle-min {
+  top: -8px;
+  left: -10px;
+}
+
+.toggle-max {
+  top: -8px;
+  right: -10px;
+}
+
+.range-wrapper-inputs {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.input-left {
+  border-radius: 4px 0 0 4px;
+  border-right: 1px;
+}
+
+.input-right {
+  border-radius: 0 4px 4px 0;
+  border-left: 1px;
+}
+
+.range-input {
+  /*должно быть 144px, почему паддинги тоже считаются???*/
+  width: 104px;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  padding: 12px 18px;
+  border: 2px solid #FFFFFF;
+  appearance: textfield;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.catalog-hotels {
+  padding: 0px 72px;
 }
 
 .sorting-container {
@@ -513,7 +669,29 @@ body h2 {
   justify-content: center;
 }
 
-header .button--primary:focus {
+.form-buttons .button--reset {
+  width: 160px;
+  margin: 0;
+  padding: 0;
+  color: inherit;
+  border: none;
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 400;
+  text-transform: none;
+  background-color: transparent;
+}
+
+.form-buttons .button--primary {
+  width: 160px;
+  padding: 15px 15px;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.form-buttons .button--primary:focus {
   outline: 3px solid #FFFFFF;
   background-color: #68A2CA;
 }
