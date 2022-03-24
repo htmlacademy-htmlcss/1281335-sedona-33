@@ -26,7 +26,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
-  background-color: #FFFFFF;
+  background-color: #F2F2F2;
 }
 
 body h2 {
@@ -34,6 +34,15 @@ body h2 {
   font-size: 30px;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.container {
+  /*display: flex;*/
+  margin: 0 auto;
+  /*flex-direction: column;*/
+  width: 1200px;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 15px 5px rgb(0 0 0 / 10%);
 }
 
 .visually-hidden {
