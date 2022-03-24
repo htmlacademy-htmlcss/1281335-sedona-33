@@ -1051,6 +1051,16 @@ body h2 {
   margin-left: auto; /*либо justify-content в pagination-container*/
 }
 
+.count-title {
+  display: flex;
+  align-items: center;
+  margin-right: 51px;
+}
+
+.count-select {
+  width: 160px;
+}
+
 .page-footer-container {
   width: 1200px;
   /*Высоту можно задать?*/
