@@ -38,9 +38,7 @@ body h2 {
 }
 
 .container {
-  /*display: flex;*/
   margin: 0 auto;
-  /*flex-direction: column;*/
   width: 1200px;
   background-color: #FFFFFF;
   box-shadow: 0 0 15px 5px rgb(0 0 0 / 10%);
@@ -281,8 +279,6 @@ body h2 {
 }
 
 .about {
-  /*margin: 0;*/
-  /*padding: 0;*/
   margin: 0 auto;
   width: 720px;
   padding-top: 63px;
@@ -292,7 +288,6 @@ body h2 {
 }
 
 .about h2 {
-  /*line-height: 36px;*/
   margin-bottom: 31px;
 }
 
@@ -301,7 +296,6 @@ body h2 {
   padding: 0;
   list-style-type: none;
   display: flex;
-  /*text-align: center;*/
 }
 
 .advantages h3 {
@@ -322,16 +316,6 @@ body h2 {
 .advantages__info {
   margin-top: 29px;
 }
-
-/*.advantages p {*/
-/*  margin-top: 30px;*/
-/*}*/
-
-/*.advantages__name {*/
-/*  margin-top: 20px;*/
-/*}*/
-
-
 
 .advantages__item {
   width: 400px;
@@ -356,11 +340,6 @@ body h2 {
   color: #FFFFFF;
   background-color: #83B3D3;
 }
-
-/*.cold p {*/
-/*  margin-right: 15px;*/
-/*  margin-left: 15px;*/
-/*}*/
 
 .icon {
   display: flex;
@@ -398,9 +377,6 @@ body h2 {
   background-image: url("../images/background-subscription.jpg");
   padding: 92px 200px 92px 200px;
 }
-.sub {
-  /*width: 800px;*/
-}
 
 .sub h2 {
   line-height: 36px;
@@ -425,7 +401,6 @@ body h2 {
   display: flex;
   justify-content: center;
   margin-top: 46px;
-  /*margin: 0;*/
 }
 
 .newsletter-email {
@@ -467,10 +442,6 @@ body h2 {
   outline: 3px solid #83B3D3;
 }
 
-/*.field:invalid {*/
-/*  outline: 2px solid #FF5757;*/
-/*}*/
-
 .text {
   font-size: 22px;
   line-height: 26px;
@@ -505,11 +476,6 @@ body h2 {
   cursor: pointer;
 }
 
-
-.breadcrumbs-link {
-  /*margin-right: 26px;*/
-}
-
 .breadcrumbs-item {
   margin-right: 26px;
   position: relative;
@@ -527,14 +493,9 @@ body h2 {
 .breadcrumbs-state {
   margin: 0;
   padding: 0;
-  /*min-width: 28px;*/
-  /*min-height: 28px;*/
 }
 
 .breadcrumbs-state:focus {
-  /*min-width: 28px;*/
-  /*min-height: 28px;*/
-  /*border: none;*/
   border: 3px solid #83B3D3;
 }
 
@@ -557,7 +518,6 @@ body h2 {
 .catalog-filter__group {
   font-size: 18px;
   line-height: 23px;
-  /*Нужно поправить правый отступ для каждого филдсета!*/
   margin: 0 67px 0 0;
   padding: 0;
   border: none;
@@ -589,14 +549,6 @@ body h2 {
   background-color: #FFFFFF;
 }
 
-/*.control:hover .control-mark {*/
-/*  background-color: rgba(255, 255, 255, 0.6);*/
-/*}*/
-
-/*.control-input:disabled + .control-mark {*/
-/*  border-color: #242424;*/
-/*}*/
-
 /* Отрисованные чек-боксы */
 .control__input[type="checkbox"]:checked + .control-mark::before,
 .control__input[type="checkbox"]:checked + .control-mark::after {
@@ -609,7 +561,6 @@ body h2 {
   content: "";
 }
 
-/* Radio */
 .control__input[type="radio"] + .control-mark {
   border-radius: 50%;
 }
@@ -709,22 +660,22 @@ body h2 {
 
 .input-left {
   border-radius: 4px 0 0 4px;
-  border-right: 1px;
+  border-right: 2px solid #FFFFFF;
 }
 
 .input-right {
   border-radius: 0 4px 4px 0;
-  border-left: 1px;
+  border-left: 0px solid #FFFFFF;
 }
 
 .range-input {
-  /*должно быть 144px, почему паддинги тоже считаются???*/
   width: 104px;
   font: inherit;
   color: inherit;
   background-color: transparent;
   padding: 12px 18px;
-  border: 2px solid #FFFFFF;
+  border-style: solid;
+  border-color: #FFFFFF;
   appearance: textfield;
 }
 
@@ -758,7 +709,6 @@ body h2 {
 
 .sorting-container {
   display: flex;
-  /*justify-content: space-between;*/
   width: 1057px;
   margin-bottom: 30px;
 }
@@ -766,13 +716,10 @@ body h2 {
 .sorting--title {
   line-height: 39px;
   margin-right: auto;
-  /*пока не стала прописывать*/
-  /*margin-right: 192px;*/
 }
 
 .sorting--elements {
   display: flex;
-  /*flex-grow: 1;*/
 }
 
 .sorting--types {
@@ -816,7 +763,6 @@ body h2 {
 }
 
 .button--reset:focus {
-  /*margin: 0 auto;*/
   opacity: 1;
   outline: 3px solid #83B3D3;
   border-radius: 4px;
@@ -866,8 +812,6 @@ body h2 {
   display: flex;
   width: 287px;
   align-items: center;
-  /*justify-content: center;*/
-  /*margin-right: auto;*/
   color: #333333;
 }
 
@@ -875,7 +819,6 @@ body h2 {
 .select-control {
   margin-left: auto;
   width: 100%;
-  /*min-width: 300px;*/
   padding: 12px 48px 13px 19px;
   font: inherit;
   background-color: #ffffff;
@@ -906,8 +849,6 @@ body h2 {
 }
 
 .hotel-list {
-  /*display: flex;*/
-  /*flex-wrap: wrap;*/
   display: grid;
   grid-template-columns: repeat(3, 340px);
   list-style-type: none;
@@ -920,7 +861,6 @@ body h2 {
   display: flex;
   flex-direction: column;
   padding: 20px;
-  /*flex-grow: 1;*/
 }
 
 .hotel-card h3 {
@@ -968,7 +908,6 @@ body h2 {
   line-height: 23px;
   margin-bottom: 16px;
   display: flex;
-  /*justify-content: space-between;*/
 }
 
 .hotel-card__row:last-child {
@@ -991,12 +930,7 @@ body h2 {
   text-align: center;
   padding-top: 9px;
   padding-bottom: 10px;
-  /*padding: 9px 23px 10px 23px;*/
 }
-
-/*.hotel-card__button .button--primary {*/
-/*  width: 140px;*/
-/*}*/
 
 .favorite {
   width: 140px;
@@ -1039,7 +973,6 @@ body h2 {
   text-align: center;
   padding-top: 9px;
   padding-bottom: 10px;
-  /*padding: 9px 32px 10px 32px;*/
 }
 
 .load__show {
@@ -1058,7 +991,6 @@ body h2 {
 
 .pagination-container {
   display: flex;
-  /*justify-content: space-between;*/
 }
 
 .pagination {
@@ -1103,7 +1035,7 @@ body h2 {
   font-size: 18px;
   line-height: 23px;
   display: flex;
-  margin-left: auto; /*либо justify-content в pagination-container*/
+  margin-left: auto;
 }
 
 .count-title {
@@ -1118,7 +1050,6 @@ body h2 {
 
 .page-footer-container {
   width: 1200px;
-  /*Высоту можно задать?*/
   box-sizing: border-box;
   padding: 40px 72px;
   min-height: 120px;
@@ -1133,7 +1064,6 @@ body h2 {
   display: flex;
   justify-content: center;
   width: 720px;
-  /*margin-right: 53px;*/
 }
 
 .footer-address-phone {
@@ -1159,10 +1089,9 @@ body h2 {
 .footer-social__item {
   min-width: 15px;
   min-height: 10px;
-  margin-right: 5px; /*???*/
+  margin-right: 5px;
 }
 
-/*или last-child*/
 .footer-social__item:nth-child(3n) {
   margin-right: 0;
 }
@@ -1217,7 +1146,6 @@ body h2 {
 
 .footer-logo {
   margin-left: auto;
-  /*padding: 14px 22px;*/
 }
 
 .logo-htmlacademy {
@@ -1363,6 +1291,7 @@ body h2 {
 }
 
 .guests-number-fields {
+  -moz-appearance: textfield;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 40px;
@@ -1462,7 +1391,6 @@ body h2 {
   border-radius: 10px;
   font-size: 16px;
   line-height: 20px;
-  /*transition: transform 0.5s;*/
   position: absolute;
   padding: 15px 20px;
   bottom: 0;
@@ -1472,7 +1400,6 @@ body h2 {
 }
 
 .triangle {
-  /*fill: red;*/
   position: absolute;
   top: 1px;
   left: 118px;
