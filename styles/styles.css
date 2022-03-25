@@ -479,7 +479,9 @@ body h2 {
   padding: 0;
   display: flex;
   list-style-type: none;
+  cursor: pointer;
 }
+
 
 .breadcrumbs-link {
   /*margin-right: 26px;*/
@@ -488,6 +490,29 @@ body h2 {
 .breadcrumbs-item {
   margin-right: 26px;
   position: relative;
+}
+
+.breadcrumbs-item:hover {
+  opacity: 0.6;
+}
+
+.breadcrumbs-link:focus {
+  border: none;
+  outline: 3px solid #83B3D3;
+}
+
+.breadcrumbs-state {
+  margin: 0;
+  padding: 0;
+  /*min-width: 28px;*/
+  /*min-height: 28px;*/
+}
+
+.breadcrumbs-state:focus {
+  /*min-width: 28px;*/
+  /*min-height: 28px;*/
+  /*border: none;*/
+  border: 3px solid #83B3D3;
 }
 
 .breadcrumbs-item::after {
@@ -1269,6 +1294,7 @@ body h2 {
   align-items: center;
   border: none;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .modal__sign:hover,
@@ -1380,6 +1406,7 @@ body h2 {
   width: 25px;
   height: 25px;
   background-color: #83B3D3;
+  cursor: pointer;
 }
 
 .circle:hover {
