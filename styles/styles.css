@@ -18,6 +18,7 @@ html {
 }
 
 body {
+  min-width: 1280px;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -26,7 +27,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
-  background-color: #E5E5E5;
+  background-color: #F2F2F2;
 }
 
 body h2 {
@@ -37,9 +38,7 @@ body h2 {
 }
 
 .container {
-  /*display: flex;*/
   margin: 0 auto;
-  /*flex-direction: column;*/
   width: 1200px;
   background-color: #FFFFFF;
   box-shadow: 0 0 15px 5px rgb(0 0 0 / 10%);
@@ -57,6 +56,7 @@ body h2 {
 }
 
 .button {
+  font-family: "PT Sans", sans-serif;
   display: inline-block;
   font-size: 20px;
   font-weight: 700;
@@ -177,7 +177,7 @@ body h2 {
   display: flex;
   flex-wrap: wrap;
   width: 460px;
-  margin:0 0 0 239px;
+  margin:0 0 0 169px;
   padding: 0;
   list-style-type: none;
 }
@@ -187,7 +187,7 @@ body h2 {
   margin-left: auto;
   flex-wrap: initial;
   align-items: center;
-  justify-content: center;
+  justify-content: end;
 }
 
 .navigation__link {
@@ -203,11 +203,14 @@ body h2 {
 }
 
 .navigation__user .navigation__link {
-  min-width: 18px;
+  min-width: 10px;
   min-height: 18px;
 }
 
 .navigation__item .button {
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 20px;
   width: 160px;
   color: #FFFFFF;
   padding: 8px 15px;
@@ -267,17 +270,16 @@ body h2 {
 }
 
 .background-index {
+  box-sizing: border-box;
   display: flex;
   justify-content: center;
-  align-items: center;
+  padding-top: 51px;
   width: 1200px;
   height: 485px;
   background-image: url("../images/background-index.jpg");
 }
 
 .about {
-  /*margin: 0;*/
-  /*padding: 0;*/
   margin: 0 auto;
   width: 720px;
   padding-top: 63px;
@@ -287,7 +289,6 @@ body h2 {
 }
 
 .about h2 {
-  /*line-height: 36px;*/
   margin-bottom: 31px;
 }
 
@@ -296,19 +297,12 @@ body h2 {
   padding: 0;
   list-style-type: none;
   display: flex;
-  /*text-align: center;*/
 }
+
 .advantages h3 {
   font-size: 24px;
   line-height: 28px;
-}
-
-.advantages p {
-  margin-top: 30px;
-}
-
-.advantages__name {
-  margin-top: 20px;
+  text-transform: uppercase;
 }
 
 .advantages__title {
@@ -316,9 +310,17 @@ body h2 {
   margin-bottom: 30px;
 }
 
+.advantages__type {
+  margin-bottom: 15px;
+}
+
+.advantages__info {
+  margin-top: 29px;
+}
+
 .advantages__item {
   width: 400px;
-  height: 384px;
+  min-height: 384px;
   padding: 0px 75px;
 }
 
@@ -340,13 +342,14 @@ body h2 {
   background-color: #83B3D3;
 }
 
-/*.cold p {*/
-/*  margin-right: 15px;*/
-/*  margin-left: 15px;*/
-/*}*/
-
 .icon {
-  margin-top: 88px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  min-width: 75px;
+  min-height: 76px;
+  margin-top: 85px;
+  margin-bottom: 23px;
 }
 
 .entry {
@@ -356,10 +359,12 @@ body h2 {
 
 .entry h2 {
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
+  line-height: 36px;
 }
 
 .entry__button {
+  box-sizing: border-box;
   width: 575px;
   margin-top: 34px;
   padding: 12px 30px;
@@ -367,47 +372,36 @@ body h2 {
 }
 
 .subscription {
-  /*height: 411px;*/
+  box-sizing: border-box;
   color: #FFFFFF;
   background-color: #83B3D3;
   background-image: url("../images/background-subscription.jpg");
-  padding: 94px 200px 94px 200px;
-  /*text-align: center;*/
-}
-.sub {
-  /*width: 800px;*/
+  padding: 92px 200px 92px 200px;
 }
 
-/* из-за заголовков лишние пиксели в отступах везде, пока такой костыль */
 .sub h2 {
+  line-height: 36px;
   margin: 0px 0px 30px 0px;
   color: #FFFFFF;
 }
-
-/*.newsletter-button {*/
-/*  background-color: #83B3D3;*/
-/*}*/
-/*.newsletter-button:hover {*/
-/*  background-color: #68A2CA;*/
-/*}*/
 
 .subscription-inner {
   /*width: 800px;*/
   text-align: center;
   margin: 0px 200px;
-  padding-top: 48px;
+  padding-top: 43px;
   padding-bottom: 141px;
 }
 
 .subscription-inner h2 {
   margin-bottom: 46px;
+  line-height: 36px;
 }
 
 .newsletter-form {
   display: flex;
   justify-content: center;
   margin-top: 46px;
-  /*margin: 0;*/
 }
 
 .newsletter-email {
@@ -415,11 +409,11 @@ body h2 {
   margin: 0;
 }
 
-/*.newsletter-email .field {*/
-/*  width: 600px;*/
-/*}*/
-
 .newsletter-button {
+  box-sizing: border-box;
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  padding: 18px 20px;
   width: 200px;
   border-radius: 0px 10px 10px 0px;
   line-height: 26px;
@@ -431,6 +425,7 @@ body h2 {
 }
 
 .field {
+  box-sizing: border-box;
   width: 600px;
   margin: 0;
   padding: 20px 22px;
@@ -448,18 +443,15 @@ body h2 {
   outline: 3px solid #83B3D3;
 }
 
-/*.field:invalid {*/
-/*  outline: 2px solid #FF5757;*/
-/*}*/
-
 .text {
   font-size: 22px;
   line-height: 26px;
 }
 
 .header-inner {
-  height: 373px;
-  padding: 35px 72px 0px 72px;
+  box-sizing: border-box;
+  min-height: 408px;
+  padding: 35px 72px 76px;
   margin-bottom: 25px;
   color: #FFFFFF;
   background-color: #756257;
@@ -467,27 +459,43 @@ body h2 {
 }
 
 .header-inner-title {
-  margin-top: 0;
-  margin-bottom: 5px;
+  margin: 0;
   font-size: 60px;
-  line-height: 78px; /*  77.64  */
-
+  line-height: 68px;
 }
 
 .breadcrumbs {
+  margin: 0;
+  font-size: 16px;
+  line-height: 21px;
+  display: flex;
+  flex-wrap: wrap;
   margin: 0px 0px 45px 0px;
   padding: 0;
   display: flex;
   list-style-type: none;
-}
-
-.breadcrumbs-link {
-  /*margin-right: 26px;*/
+  cursor: pointer;
 }
 
 .breadcrumbs-item {
   margin-right: 26px;
   position: relative;
+}
+
+.breadcrumbs-item:hover {
+  opacity: 0.6;
+}
+
+.breadcrumbs-link:focus {
+  border: none;
+  /*outline: 3px solid #83B3D3;*/
+  box-shadow: 0 0 0 3px #83B3D3;
+  border-radius: 4px;
+}
+
+.breadcrumbs-state {
+  margin: 0;
+  padding: 0;
 }
 
 .breadcrumbs-item::after {
@@ -509,7 +517,6 @@ body h2 {
 .catalog-filter__group {
   font-size: 18px;
   line-height: 23px;
-  /*Нужно поправить правый отступ для каждого филдсета!*/
   margin: 0 67px 0 0;
   padding: 0;
   border: none;
@@ -541,14 +548,6 @@ body h2 {
   background-color: #FFFFFF;
 }
 
-/*.control:hover .control-mark {*/
-/*  background-color: rgba(255, 255, 255, 0.6);*/
-/*}*/
-
-/*.control-input:disabled + .control-mark {*/
-/*  border-color: #242424;*/
-/*}*/
-
 /* Отрисованные чек-боксы */
 .control__input[type="checkbox"]:checked + .control-mark::before,
 .control__input[type="checkbox"]:checked + .control-mark::after {
@@ -561,7 +560,6 @@ body h2 {
   content: "";
 }
 
-/* Radio */
 .control__input[type="radio"] + .control-mark {
   border-radius: 50%;
 }
@@ -661,22 +659,22 @@ body h2 {
 
 .input-left {
   border-radius: 4px 0 0 4px;
-  border-right: 1px;
+  border-right: 2px;
 }
 
 .input-right {
   border-radius: 0 4px 4px 0;
-  border-left: 1px;
+  border-left: 0px;
 }
 
 .range-input {
-  /*должно быть 144px, почему паддинги тоже считаются???*/
   width: 104px;
   font: inherit;
   color: inherit;
   background-color: transparent;
   padding: 12px 18px;
-  border: 2px solid #FFFFFF;
+  border-style: solid;
+  border-color: #FFFFFF;
   appearance: textfield;
 }
 
@@ -693,14 +691,16 @@ body h2 {
 .range-input:focus {
   opacity: 1;
   outline: none;
-  border: 2px solid #FFFFFF;
   box-shadow: 0px 0px 0px 3px #81B3D2;
+}
+
+.input-left:active {
+  border: 2px solid #FFFFFF;
 }
 
 .range-input:active {
   box-shadow: none;
   outline: none;
-  border: 2px solid #FFFFFF;
   background-color: #756257;
 }
 
@@ -710,26 +710,25 @@ body h2 {
 
 .sorting-container {
   display: flex;
-  /*justify-content: space-between;*/
   width: 1057px;
-  margin-bottom: 53px;
+  margin-bottom: 30px;
 }
 
 .sorting--title {
   line-height: 39px;
-  /*пока не стала прописывать*/
-  /*margin-right: 192px;*/
+  margin-right: auto;
 }
 
 .sorting--elements {
   display: flex;
-  flex-grow: 1;
 }
 
 .sorting--types {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
   align-items: center;
-  justify-content: center;
+  margin-left: 81px;
 }
 
 .button--reset {
@@ -765,7 +764,6 @@ body h2 {
 }
 
 .button--reset:focus {
-  /*margin: 0 auto;*/
   opacity: 1;
   outline: 3px solid #83B3D3;
   border-radius: 4px;
@@ -811,21 +809,16 @@ body h2 {
   border: 2px solid #000000;
 }
 
-.sorting--title {
-  margin-right: 192px;
-}
-
 .sorting--select {
   display: flex;
   width: 287px;
   align-items: center;
-  /*justify-content: center;*/
-  margin-right: auto;
   color: #333333;
 }
 
 /* Control */
 .select-control {
+  margin-left: auto;
   width: 100%;
   padding: 12px 48px 13px 19px;
   font: inherit;
@@ -857,22 +850,18 @@ body h2 {
 }
 
 .hotel-list {
-  /*display: flex;*/
-  /*flex-wrap: wrap;*/
   display: grid;
   grid-template-columns: repeat(3, 340px);
   list-style-type: none;
-  margin: 0;
-  margin-bottom: 34px;
+  margin: 0 0 26px 0;
   padding: 0;
-  gap: 10px 18px;
+  gap: 4px 18px;
 }
 
 .hotel-card {
   display: flex;
   flex-direction: column;
   padding: 20px;
-  /*flex-grow: 1;*/
 }
 
 .hotel-card h3 {
@@ -888,7 +877,7 @@ body h2 {
 }
 
 .hotel-card__image {
-  margin-bottom: 16px;
+  margin-bottom: 12px;
 }
 
 .hotel-card__link:hover .hotel-card__image {
@@ -920,7 +909,6 @@ body h2 {
   line-height: 23px;
   margin-bottom: 16px;
   display: flex;
-  /*justify-content: space-between;*/
 }
 
 .hotel-card__row:last-child {
@@ -943,12 +931,7 @@ body h2 {
   text-align: center;
   padding-top: 9px;
   padding-bottom: 10px;
-  /*padding: 9px 23px 10px 23px;*/
 }
-
-/*.hotel-card__button .button--primary {*/
-/*  width: 140px;*/
-/*}*/
 
 .favorite {
   width: 140px;
@@ -991,7 +974,6 @@ body h2 {
   text-align: center;
   padding-top: 9px;
   padding-bottom: 10px;
-  /*padding: 9px 32px 10px 32px;*/
 }
 
 .load__show {
@@ -1010,14 +992,18 @@ body h2 {
 
 .pagination-container {
   display: flex;
-  /*justify-content: space-between;*/
 }
 
 .pagination {
   display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+.pagination__item {
+  margin-bottom: 5px;
 }
 
 .pagination__link {
@@ -1029,8 +1015,8 @@ body h2 {
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
-  width: 55px;
-  height: 55px;
+  min-width: 55px;
+  min-height: 55px;
   padding: 14px 15px;
   text-align: center;
 }
@@ -1045,10 +1031,12 @@ body h2 {
 }
 
 .card-count {
+  display: flex;
+  flex-wrap: wrap;
   font-size: 18px;
   line-height: 23px;
   display: flex;
-  margin-left: auto; /*либо justify-content в pagination-container*/
+  margin-left: auto;
 }
 
 .count-title {
@@ -1063,8 +1051,9 @@ body h2 {
 
 .page-footer-container {
   width: 1200px;
-  /*Высоту можно задать?*/
-  height: 120px;
+  box-sizing: border-box;
+  padding: 40px 72px;
+  min-height: 120px;
   display: flex;
   margin: 0 auto;
   text-align: center;
@@ -1073,12 +1062,12 @@ body h2 {
 }
 
 .phone {
+  display: flex;
+  justify-content: center;
   width: 720px;
-  margin-right: 53px;
 }
 
 .footer-address-phone {
-  padding: 15px;
   border-radius: 10px;
   font-size: 40px;
   line-height: 40px;
@@ -1087,7 +1076,9 @@ body h2 {
 }
 
 .footer-social {
-  margin-right: 48px;
+  margin-right: 45px;
+  margin-left: -11px;
+  margin-top: -5px;
 }
 
 .footer-social__list {
@@ -1101,10 +1092,9 @@ body h2 {
 .footer-social__item {
   min-width: 15px;
   min-height: 10px;
-  margin-right: 5px; /*???*/
+  margin-right: 5px;
 }
 
-/*или last-child*/
 .footer-social__item:nth-child(3n) {
   margin-right: 0;
 }
@@ -1158,7 +1148,7 @@ body h2 {
 }
 
 .footer-logo {
-  padding: 14px 22px;
+  margin-left: auto;
 }
 
 .logo-htmlacademy {
@@ -1201,7 +1191,7 @@ body h2 {
   width: 715px;
   position: relative;
   margin: auto;
-  padding: 54px 70px 70px 70px;
+  padding: 62px 70px 70px 70px;
   font-weight: 700;
   background-color: #ffffff;
   border-radius: 30px;
@@ -1269,6 +1259,7 @@ body h2 {
   align-items: center;
   border: none;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .modal__sign:hover,
@@ -1303,6 +1294,7 @@ body h2 {
 }
 
 .guests-number-fields {
+  -moz-appearance: textfield;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 40px;
@@ -1353,6 +1345,8 @@ body h2 {
 }
 
 .search-form__helper {
+  font-size: 16px;
+  line-height: 30px;
   font-weight: 400;
   position: absolute;
   bottom: 0;
@@ -1380,6 +1374,7 @@ body h2 {
   width: 25px;
   height: 25px;
   background-color: #83B3D3;
+  cursor: pointer;
 }
 
 .circle:hover {
@@ -1399,7 +1394,6 @@ body h2 {
   border-radius: 10px;
   font-size: 16px;
   line-height: 20px;
-  /*transition: transform 0.5s;*/
   position: absolute;
   padding: 15px 20px;
   bottom: 0;
@@ -1409,7 +1403,6 @@ body h2 {
 }
 
 .triangle {
-  /*fill: red;*/
   position: absolute;
   top: 1px;
   left: 118px;
