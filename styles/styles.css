@@ -1245,7 +1245,7 @@ body h2 {
 .modal__container {
   display: flex;
   /*Отключаем модальное окно*/
-  /*display: none;*/
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -1260,7 +1260,7 @@ body h2 {
   width: 715px;
   position: relative;
   margin: auto;
-  padding: 54px 70px 70px 70px;
+  padding: 62px 70px 70px 70px;
   font-weight: 700;
   background-color: #ffffff;
   border-radius: 30px;
@@ -1413,6 +1413,8 @@ body h2 {
 }
 
 .search-form__helper {
+  font-size: 16px;
+  line-height: 30px;
   font-weight: 400;
   position: absolute;
   bottom: 0;
