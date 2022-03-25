@@ -56,6 +56,7 @@ body h2 {
 }
 
 .button {
+  font-family: "PT Sans", sans-serif;
   display: inline-block;
   font-size: 20px;
   font-weight: 700;
@@ -487,16 +488,14 @@ body h2 {
 
 .breadcrumbs-link:focus {
   border: none;
-  outline: 3px solid #83B3D3;
+  /*outline: 3px solid #83B3D3;*/
+  box-shadow: 0 0 0 3px #83B3D3;
+  border-radius: 4px;
 }
 
 .breadcrumbs-state {
   margin: 0;
   padding: 0;
-}
-
-.breadcrumbs-state:focus {
-  border: 3px solid #83B3D3;
 }
 
 .breadcrumbs-item::after {
@@ -660,12 +659,12 @@ body h2 {
 
 .input-left {
   border-radius: 4px 0 0 4px;
-  border-right: 2px solid #FFFFFF;
+  border-right: 2px;
 }
 
 .input-right {
   border-radius: 0 4px 4px 0;
-  border-left: 0px solid #FFFFFF;
+  border-left: 0px;
 }
 
 .range-input {
@@ -692,14 +691,16 @@ body h2 {
 .range-input:focus {
   opacity: 1;
   outline: none;
-  border: 2px solid #FFFFFF;
   box-shadow: 0px 0px 0px 3px #81B3D2;
+}
+
+.input-left:active {
+  border: 2px solid #FFFFFF;
 }
 
 .range-input:active {
   box-shadow: none;
   outline: none;
-  border: 2px solid #FFFFFF;
   background-color: #756257;
 }
 
@@ -1076,6 +1077,8 @@ body h2 {
 
 .footer-social {
   margin-right: 45px;
+  margin-left: -11px;
+  margin-top: -5px;
 }
 
 .footer-social__list {
@@ -1100,7 +1103,7 @@ body h2 {
   width: 40px;
   height: 40px;
   display: flex;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
   background-color: transparent;
 }
