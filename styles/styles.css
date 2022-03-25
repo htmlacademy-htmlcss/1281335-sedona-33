@@ -368,29 +368,20 @@ body h2 {
 }
 
 .subscription {
-  /*height: 411px;*/
   color: #FFFFFF;
   background-color: #83B3D3;
   background-image: url("../images/background-subscription.jpg");
   padding: 94px 200px 94px 200px;
-  /*text-align: center;*/
 }
 .sub {
   /*width: 800px;*/
 }
 
-/* из-за заголовков лишние пиксели в отступах везде, пока такой костыль */
 .sub h2 {
+  line-height: 36px;
   margin: 0px 0px 30px 0px;
   color: #FFFFFF;
 }
-
-/*.newsletter-button {*/
-/*  background-color: #83B3D3;*/
-/*}*/
-/*.newsletter-button:hover {*/
-/*  background-color: #68A2CA;*/
-/*}*/
 
 .subscription-inner {
   /*width: 800px;*/
@@ -402,6 +393,7 @@ body h2 {
 
 .subscription-inner h2 {
   margin-bottom: 46px;
+  line-height: 36px;
 }
 
 .newsletter-form {
@@ -459,8 +451,9 @@ body h2 {
 }
 
 .header-inner {
-  height: 373px;
-  padding: 35px 72px 0px 72px;
+  box-sizing: border-box;
+  min-height: 373px;
+  padding: 35px 72px 50px 72px;
   margin-bottom: 25px;
   color: #FFFFFF;
   background-color: #756257;
@@ -471,8 +464,7 @@ body h2 {
   margin-top: 0;
   margin-bottom: 5px;
   font-size: 60px;
-  line-height: 78px; /*  77.64  */
-
+  line-height: 78px;
 }
 
 .breadcrumbs {
@@ -756,6 +748,7 @@ body h2 {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-left: 81px;
 }
 
 .button--reset {
@@ -853,6 +846,7 @@ body h2 {
 /* Control */
 .select-control {
   width: 100%;
+  /*min-width: 300px;*/
   padding: 12px 48px 13px 19px;
   font: inherit;
   background-color: #ffffff;
@@ -1055,8 +1049,8 @@ body h2 {
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
-  width: 55px;
-  height: 55px;
+  min-width: 55px;
+  min-height: 55px;
   padding: 14px 15px;
   text-align: center;
 }
@@ -1071,6 +1065,8 @@ body h2 {
 }
 
 .card-count {
+  display: flex;
+  flex-wrap: wrap;
   font-size: 18px;
   line-height: 23px;
   display: flex;
@@ -1090,7 +1086,9 @@ body h2 {
 .page-footer-container {
   width: 1200px;
   /*Высоту можно задать?*/
-  height: 120px;
+  box-sizing: border-box;
+  padding: 40px 72px;
+  min-height: 120px;
   display: flex;
   margin: 0 auto;
   text-align: center;
@@ -1099,12 +1097,13 @@ body h2 {
 }
 
 .phone {
+  display: flex;
+  justify-content: center;
   width: 720px;
-  margin-right: 53px;
+  /*margin-right: 53px;*/
 }
 
 .footer-address-phone {
-  padding: 15px;
   border-radius: 10px;
   font-size: 40px;
   line-height: 40px;
@@ -1184,7 +1183,8 @@ body h2 {
 }
 
 .footer-logo {
-  padding: 14px 22px;
+  margin-left: auto;
+  /*padding: 14px 22px;*/
 }
 
 .logo-htmlacademy {
