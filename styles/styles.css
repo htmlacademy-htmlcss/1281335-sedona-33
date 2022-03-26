@@ -235,12 +235,16 @@ body {
   fill: #756257;
 }
 
-.navigation__link:active .navigation__icon path {
-  opacity: 0.3;
-}
-
 .navigation__item:hover .button {
   color: #FFFFFF;
+}
+
+.navigation__link:active {
+  color: rgba(117, 98, 87, 0.3);
+}
+
+.navigation__icon:active path {
+  opacity: 0.3;
 }
 
 .navigation__item:active .button {
@@ -279,6 +283,7 @@ body {
   height: 485px;
   background-image: url("../images/background-index.jpg");
   background-color: rgb(131 179 211 / 57%);
+  background-size: cover;
 }
 
 .about {
@@ -313,7 +318,7 @@ body {
 }
 
 .advantages__type {
-  margin-bottom: 15px;
+  margin-bottom: 0px;
 }
 
 .advantages__info {
@@ -329,8 +334,11 @@ body {
   align-items: center;
 }
 
+.advantages__image {
+  display: flex;
+}
+
 .advantages__image img {
-  height: 100%;
   object-fit: cover;
 }
 
@@ -354,7 +362,6 @@ body {
   width: 75px;
   height: 76px;
   margin-top: 85px;
-  /*margin-bottom: 23px;*/
 }
 
 .house {
@@ -370,6 +377,7 @@ body {
 .souvenir {
   background-image: url('../images/icon-3.svg');
   background-repeat: no-repeat;
+  margin-left: 7px;
 }
 
 .entry {
@@ -397,6 +405,7 @@ body {
   background-color: #83B3D3;
   background-image: url("../images/background-subscription.jpg");
   padding: 92px 200px 92px 200px;
+  background-size: cover;
 }
 
 .sub h2 {
@@ -473,10 +482,11 @@ body {
   box-sizing: border-box;
   min-height: 408px;
   padding: 35px 72px 74px;
-  margin-bottom: 25px;
+  margin-bottom: 23px;
   color: #FFFFFF;
   background-color: #756257;
   background-image: url("../images/background-catalog.jpg");
+  background-size: cover;
 }
 
 .header-inner-title {
@@ -847,6 +857,7 @@ body {
   width: 100%;
   padding: 12px 48px 13px 19px;
   font: inherit;
+  line-height: 23px;
   background-color: #ffffff;
   border: 2px solid #E6E6E6;
   border-radius: 4px;
@@ -1067,8 +1078,7 @@ body {
 
 .pagination__link:active {
   outline: none;
-  background-color: #F2F2F2;
-  color: #000000;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .card-count {
@@ -1106,6 +1116,7 @@ body {
   display: flex;
   justify-content: center;
   width: 720px;
+  padding-left: 10px;
 }
 
 .footer-address-phone {
