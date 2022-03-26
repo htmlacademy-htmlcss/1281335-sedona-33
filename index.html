@@ -5,6 +5,7 @@
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
   </head>
   <body>
   <!--  <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>-->
@@ -59,7 +60,7 @@
         </div>
         <!-- ********************************************** -->
         <div class="about">
-          <h2 class="no-indent">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+          <h2 class="subtitle no-indent">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
           <p class="no-indent">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
         </div>
         <!-- ********************************************** -->
@@ -78,23 +79,20 @@
         <!-- ********************************************** -->
         <ul class="advantages">
           <li class="advantages__item light1">
-            <div class="icon">
-            <img src="images/icon-1.svg" alt="Жилье" width="75" height="72">
-            </div>
+            <span class="icon house">
+            </span>
             <h3 class="advantages__type">Жилье</h3>
             <p class="advantages__name">Рекомендуем пожить в&nbsp;настоящем мотеле,<br>всё как в кино!</p>
           </li>
           <li class="advantages__item">
-            <div class="icon">
-            <img src="images/icon-2.svg" alt="Еда" width="74" height="70">
-            </div>
+            <span class="icon eat">
+            </span>
               <h3 class="advantages__type">Еда</h3>
             <p class="advantages__name">Всегда заказывайте<br>топовый фирменный бургер, вы не разочаруетесь!</p>
           </li>
           <li class="advantages__item light1">
-            <div class="icon">
-            <img src="images/icon-3.svg" alt="Сувениры" width="64" height="76">
-            </div>
+            <span class="icon souvenir">
+            </span>
             <h3 class="advantages__type">Сувениры</h3>
             <p class="advantages__name">Не только китайского,<br>но и настоящего местного производства!</p>
           </li>
@@ -130,7 +128,7 @@
         </ul>
         <!-- ********************************************** -->
         <section class="entry">
-          <h2>Заинтересовались?</h2>
+          <h2 class="subtitle">Заинтересовались?</h2>
           <p class="text">
             Укажите предполагаемые даты поездки, <br> и мы покажем вам лучшие предложения гостиниц в Седоне
           </p>
@@ -139,7 +137,7 @@
         <!-- ********************************************** -->
         <section class="subscription">
           <div class="sub">
-            <h2>Подпишитесь на рассылку</h2>
+            <h2 class="subtitle">Подпишитесь на рассылку</h2>
             <p class="text">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
             <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
               <label class="visually-hidden" for="newsletter-email">Email</label>
@@ -155,6 +153,7 @@
     <footer class="page-footer">
       <div class="page-footer-container">
         <section class="footer-social">
+          <h2 class="visually-hidden">Социальные сети</h2>
           <ul class="footer-social__list">
             <li class="footer-social__item">
               <a class="footer-social__link" href="https://twitter.com/htmlacademy_ru">
@@ -172,7 +171,7 @@
             </li>
             <li class="footer-social__item">
               <a class="footer-social__link" href="https://www.youtube.com/c/HTMLAcademyRUS">
-                <svg class="social-icon" aria-hidden="true" focusable="false" width="20" height="16" viewBox="0 0 20 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)"><path d="M17 0H2.9C1.2 0 0 1.5 0 3.2v9.5C0 14.5 1.2 16 2.9 16h14.3c1.5 0 2.9-1.5 2.9-3.2V3.2C19.9 1.5 18.7 0 17 0ZM7 11.8V4.2L13.7 8 7 11.8Z"/></g><defs><clipPath id="a"><path d="M0 0h20v16H0z"/></clipPath></defs>
+                <svg class="social-icon" aria-hidden="true" focusable="false" width="20" height="16" viewBox="0 0 20 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)"><path d="M17 0H2.9C1.2 0 0 1.5 0 3.2v9.5C0 14.5 1.2 16 2.9 16h14.3c1.5 0 2.9-1.5 2.9-3.2V3.2C19.9 1.5 18.7 0 17 0ZM7 11.8V4.2L13.7 8 7 11.8Z"/></g><defs><clipPath><path d="M0 0h20v16H0z"/></clipPath></defs>
                 </svg>
                 <span class="visually-hidden">YouTube</span>
               </a>
@@ -193,7 +192,7 @@
           <span class="visually-hidden">Закрыть</span>
         </button>
         <section class="modal__content">
-          <h2 class="modal__title">Поиск гостиницы в Седоне</h2>
+          <h2 class="subtitle modal__title">Поиск гостиницы в Седоне</h2>
           <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
             <div class="modal__row">
               <label class="modal__label" for="checkin-date">Дата заезда:</label>
@@ -214,22 +213,22 @@
                 <label class="modal__label" for="adults">Взрослые:</label>
                 <div class="modal__input-controls">
                   <button class="modal__sign" type="button">
-                    <div class="modal__sign--state">
+                    <span class="modal__sign--state">
                       <svg aria-hidden="true" focusable="false" width="13" height="1" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                         <path d="M0 0v1h13V0H0Z"/>
                       </svg>
-                    </div>
+                    </span>
                     <span class="visually-hidden">
                         Уменьшить количество взрослых
                       </span>
                   </button>
                   <input class="guests-number-fields" type="number" value="2" id="adults" name="adults">
                   <button class="modal__sign modal__sign--plus" type="button">
-                    <div class="modal__sign--state">
+                    <span class="modal__sign--state">
                       <svg aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 13 13" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                           <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z"/>
                       </svg>
-                    </div>
+                    </span>
                     <span class="visually-hidden">
                       Увеличить количество взрослых
                     </span>
@@ -237,8 +236,8 @@
                 </div>
               </div>
               <div class="modal__guests">
-                <label class="modal__label" for="child">
-                  <label class="modal__label--child">Дети:</label>
+                <div class="modal__label">
+                  <label class="modal__label--child" for="child">Дети:</label>
                   <div class="circle">i
                     <div class="tooltip">
                       <svg class="triangle" aria-hidden="true" focusable="false" width="19" height="9" viewBox="0 0 19 9" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -247,25 +246,25 @@
                       Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
                     </div>
                   </div>
-                </label>
+                </div>
                 <div class="modal__input-controls">
                   <button class="modal__sign modal__sign--minus" type="button">
-                    <div class="modal__sign--state">
+                    <span class="modal__sign--state">
                       <svg aria-hidden="true" focusable="false" width="13" height="1" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                         <path d="M0 0v1h13V0H0Z"/>
                       </svg>
-                    </div>
+                    </span>
                     <span class="visually-hidden">
                         Уменьшить количество детей
                       </span>
                   </button>
                   <input class="guests-number-fields" type="number" value="1" id="child" name="child">
                   <button class="modal__sign modal__sign--plus" type="button">
-                    <div class="modal__sign--state">
+                    <span class="modal__sign--state">
                       <svg aria-hidden="true" focusable="false" width="13" height="13" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                         <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z"/>
                       </svg>
-                    </div>
+                    </span>
                     <span class="visually-hidden">
                       Увеличить количество детей
                     </span>
