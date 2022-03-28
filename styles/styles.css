@@ -281,8 +281,8 @@ body {
   padding-top: 51px;
   width: 1200px;
   height: 485px;
-  background-image: url("../images/background-index.jpg");
   background-color: rgb(131 179 211 / 57%);
+  background-image: url("../images/background-index.jpg");
   background-size: cover;
 }
 
@@ -339,6 +339,7 @@ body {
 }
 
 .advantages__image img {
+  height: 100%;
   object-fit: cover;
 }
 
@@ -415,7 +416,6 @@ body {
 }
 
 .subscription-inner {
-  /*width: 800px;*/
   text-align: center;
   margin: 0px 200px;
   padding-top: 43px;
@@ -496,7 +496,6 @@ body {
 }
 
 .breadcrumbs {
-  margin: 0;
   font-size: 16px;
   line-height: 21px;
   display: flex;
@@ -519,7 +518,6 @@ body {
 
 .breadcrumbs-link:focus {
   border: none;
-  /*outline: 3px solid #83B3D3;*/
   box-shadow: 0 0 0 3px #83B3D3;
   border-radius: 4px;
 }
@@ -1059,6 +1057,7 @@ body {
 
 .pagination__item:not(:last-child) {
   margin-right: 8px;
+
 }
 
 .pagination--current {
@@ -1086,7 +1085,6 @@ body {
   flex-wrap: wrap;
   font-size: 18px;
   line-height: 23px;
-  display: flex;
   margin-left: auto;
 }
 
