@@ -5,6 +5,7 @@
     <title>Каталог</title>
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
   </head>
   <body>
   <div class="container">
@@ -170,13 +171,13 @@
         <section class="catalog-hotels">
           <div class="sorting-container">
             <div class="sorting--title">
-              <h2>Найдено гостиниц: 38</h2>
+              <h2 class="subtitle">Найдено гостиниц: 38</h2>
             </div>
             <div class="sorting--elements">
               <div class="sorting--select">
                 <select class="select-control" aria-label="Сортировка">
-                  <option value="popular">Сначала популярные</option>
                   <option value="cheap">Сначала дешёвые</option>
+                  <option value="popular">Сначала популярные</option>
                   <option value="expensive">Сначала дорогие</option>
                 </select>
               </div>
@@ -192,7 +193,7 @@
                   <span class="visually-hidden">Показать слайд-шоу</span>
                 </a>
                 <a class="card-grid-toggle" href="#">
-                  <svg ria-hidden="true" focusable="false" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z" fill="#000"/>
+                  <svg aria-hidden="true" focusable="false" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z" fill="#000"/>
                   </svg>
                   <span class="visually-hidden">Показать список</span>
                 </a>
@@ -346,7 +347,7 @@
         </section>
         <!-- ***************БЛОК*ПОДПИСКИ****************************** -->
         <section class="subscription-inner">
-          <h2>Подпишитесь на рассылку</h2>
+          <h2 class="subtitle">Подпишитесь на рассылку</h2>
           <p class="text">Только полезная информация и никакого спама, <br> честное бойскаутское!</p>
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="newsletter-email">Email</label>
@@ -361,6 +362,7 @@
     <footer class="page-footer">
       <div class="page-footer-container">
         <section class="footer-social">
+          <h2 class="visually-hidden">Социальные сети</h2>
           <ul class="footer-social__list">
             <li class="footer-social__item">
               <a class="footer-social__link" href="https://twitter.com/htmlacademy_ru">
@@ -378,7 +380,7 @@
             </li>
             <li class="footer-social__item">
               <a class="footer-social__link" href="https://www.youtube.com/c/HTMLAcademyRUS">
-                <svg class="social-icon" aria-hidden="true" focusable="false" width="20" height="16" viewBox="0 0 20 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)"><path d="M17 0H2.9C1.2 0 0 1.5 0 3.2v9.5C0 14.5 1.2 16 2.9 16h14.3c1.5 0 2.9-1.5 2.9-3.2V3.2C19.9 1.5 18.7 0 17 0ZM7 11.8V4.2L13.7 8 7 11.8Z"/></g><defs><clipPath id="a"><path d="M0 0h20v16H0z"/></clipPath></defs>
+                <svg class="social-icon" aria-hidden="true" focusable="false" width="20" height="16" viewBox="0 0 20 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)"><path d="M17 0H2.9C1.2 0 0 1.5 0 3.2v9.5C0 14.5 1.2 16 2.9 16h14.3c1.5 0 2.9-1.5 2.9-3.2V3.2C19.9 1.5 18.7 0 17 0ZM7 11.8V4.2L13.7 8 7 11.8Z"/></g><defs><clipPath><path d="M0 0h20v16H0z"/></clipPath></defs>
                 </svg>
                 <span class="visually-hidden">YouTube</span>
               </a>
